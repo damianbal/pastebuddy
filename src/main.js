@@ -1,10 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import PasteListItemComponent from "./components/PasteListItemComponent";
+
 import LoadingComponent from "./components/LoadingComponent"
 
-Vue.component('PasteListItemComponent', PasteListItemComponent)
 Vue.component('LoadingComponent', LoadingComponent)
 
 Vue.config.productionTip = false
