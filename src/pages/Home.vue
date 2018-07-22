@@ -13,13 +13,25 @@
 
     <div class="form-group">
       <label>Language</label>
-      <select class="custom-select">
+      <select v-model="lang" class="custom-select">
         <option selected>Open this select menu</option>
         <option value="js">JavaScript</option>
         <option value="cpp">C++</option>
         <option value="html">HTML</option>
         <option value="css">CSS</option>
         <option value="cs">C#</option>
+        <option value="cs">C#</option>
+        <option value="clike">C-like</option>
+        <option value="php">PHP</option>
+        <option value="perl">PHP</option>
+        <option value="go">Go</option>
+        <option value="typescript">TypeScript</option>
+        <option value="swift">Swift</option>
+        <option value="sql">SQL</option>
+        <option value="dart">Dart</option>
+        <option value="json">JSON</option>
+        <option value="java">Java/option>
+
       </select>
     </div>
 
