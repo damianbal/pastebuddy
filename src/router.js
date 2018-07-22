@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
-import About from './views/About.vue'
+import Home from './pages/Home.vue'
+import ViewPaste from './pages/ViewPaste.vue'
+import List from "./pages/List.vue"
 
 Vue.use(Router)
 
@@ -13,9 +14,16 @@ export default new Router({
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
-      component: About
+      path: '/paste/:reference',
+      name: 'view_paste',
+      component: ViewPaste,
+      props: true
+    },
+    {
+      path: '/list/:page',
+      name: 'view_all_pastes',
+      component: List,
+      props: true
     }
   ]
 })
